@@ -24,10 +24,10 @@ const TopAgents = (props: TopAgentsProps) => {
 
 	/** APOLLO REQUESTS **/
 	const {
-		loading: getPropertiesLoading,
-		data: getPropertiesData,
-		error: getPropertiesError,
-		refetch: getPropertiesRefetch,
+		loading: getAgentsLoading,
+		data: getAgentsData,
+		error: getAgentsError,
+		refetch: getAgentsRefetch,
 	} = useQuery(GET_AGENTS, {
 		fetchPolicy: 'cache-and-network',
 		variables: { input: initialInput },
